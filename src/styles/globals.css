@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-orbitron {
+  font-family: "Orbitron", sans-serif;
+}
+
+@layer base {
+  /* Hack */
+  @font-face {
+    font-family: Hack;
+    font-weight: 400;
+    src: url(./assets/fonts/Hack/Hack-Regular.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: Hack;
+    font-weight: 400;
+    font-style: italic;
+    src: url(./assets/fonts/Hack/Hack-Regular-Italic.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: Hack;
+    font-weight: 700;
+    src: url(./assets/fonts/Hack/Hack-Bold.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: Hack;
+    font-weight: 700;
+    font-style: italic;
+    src: url(./assets/fonts/Hack/Hack-Bold-Italic.ttf) format("opentype");
+  }
+
+  /* DM Mono */
+  @font-face {
+    font-family: DMMono;
+    font-weight: 300;
+    src: url(./assets/fonts/DM_Mono/DMMono-Light.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: DMMono;
+    font-weight: 300;
+    font-style: italic;
+    src: url(./assets/fonts/DM_Mono/DMMono-Light-Italic.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: DMMono;
+    font-weight: 400;
+    src: url(./assets/fonts/DM_Mono/DMMono-Regular.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: DMMono;
+    font-weight: 400;
+    font-style: italic;
+    src: url(./assets/fonts/DM_Mono/DMMono-Regular-Italic.ttf)
+      format("opentype");
+  }
+
+  @font-face {
+    font-family: DMMono;
+    font-weight: 500;
+    src: url(./assets/fonts/DM_Mono/DMMono-Medium.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: DMMono;
+    font-weight: 500;
+    font-style: italic;
+    src: url(./assets/fonts/DM_Mono/DMMono-Medium-Italic.ttf) format("opentype");
+  }
+
+  /* Passion One */
+
+  @font-face {
+    font-family: PassionOne;
+    font-weight: 400;
+    src: url(./assets/fonts/Passion_One/PassionOne-Regular.ttf)
+      format("opentype");
+  }
+
+  @font-face {
+    font-family: PassionOne;
+    font-weight: 700;
+    src: url(./assets/fonts/Passion_One/PassionOne-Bold.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: PassionOne;
+    font-weight: 900;
+    src: url(./assets/fonts/Passion_One/PassionOne-Bold.ttf) format("opentype");
+  }
+
+  /* Temp -Theodus ##### get replaced by my own font ##### */
+  @font-face {
+    font-family: ThedusCondensed;
+    font-weight: 300;
+    src: url(./assets/fonts/Thedus/ThedusCondensedLight-Regular.otf)
+      format("opentype");
+  }
+
+  @font-face {
+    font-family: ThedusCondensed;
+    font-weight: 900;
+    src: url(./assets/fonts/Thedus/ThedusCondensedLight-Bold.otf)
+      format("opentype");
+  }
+
+  @font-face {
+    font-family: ThedusStencil;
+    font-weight: 900;
+    src: url(./assets/fonts/Thedus/ThedusStencilWide-Regular.otf)
+      format("opentype");
+  }
+
+  @font-face {
+    font-family: ThedusStencil;
+    font-weight: 300;
+    src: url(./assets/fonts/Thedus/ThedusStencilCondensed-Regular.otf)
+      format("opentype");
+  }
+
+  @font-face {
+    font-family: ThedusWide;
+    font-weight: 900;
+    src: url(./assets/fonts/Thedus/ThedusWideLight-Bold.otf) format("opentype");
+  }
+
+  @font-face {
+    font-family: ThedusWide;
+    font-weight: 300;
+    src: url(./assets/fonts/Thedus/ThedusWideLight-Regular.otf)
+      format("opentype");
+  }
+}
+
+:root {
+  --darkMyt-100: #1f242b;
+  --darkMyt-75: #2a2f38;
+  --darkMyt-50: #363b45;
+  --darkMyt-25: #444955;
+
+  --lightMyt-100: #b0b8c8;
+  --lightMyt-75: #ccd0d9;
+  --lightMyt-50: #e1e4eb;
+  --lightMyt-25: #f0f4f9;
+
+  --baseMyt-red: #b74e58;
+  --baseMyt-yellow: #ffa500;
+  --baseMyt-blue: #47c7fc;
+  --baseMyt-green: #b5d1b8;
+  --baseMyt-orange: #cc4f08;
+  --baseMyt-purple: #af4f9e;
+  --baseMyt-cyan: #8ac6d1;
+
+  --brightMyt-red: #e03e3e;
+  --brightMyt-yellow: #ffbb33;
+  --brightMyt-blue: #5cc5ff;
+  --brightMyt-green: #a3d4b0;
+  --brightMyt-orange: #ff8a2b;
+  --brightMyt-purple: #d68cdb;
+  --brightMyt-cyan: #b0e0e6;
+
+  --natureMyt-red: #e06c75;
+  --natureMyt-yellow: #f3c86b;
+  --natureMyt-blue: #61afef;
+  --natureMyt-green: #98c379;
+  --natureMyt-orange: #d19a66;
+  --natureMyt-purple: #c678dd;
+  --natureMyt-cyan: #56b6c2;
+
+  --futureMyt-red: #d9665b;
+  --futureMyt-yellow: #f5e062;
+  --futureMyt-blue: #72a2d6;
+  --futureMyt-green: #b8bfb0;
+  --futureMyt-orange: #f0a44e;
+  --futureMyt-purple: #a67fb1;
+  --futureMyt-cyan: #80c9d8;
+}
+
+/* Need more settings */
+html {
+  scroll-behavior: smooth;
+}
+
+html * {
+  font-size: 14px !important;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+@layer base {
+  h1 {
+    @apply font-semibold text-4xl tracking-tighter text-lightMyt-25;
+  }
+
+  h2 {
+    @apply font-light text-3xl;
+  }
+
+  h3 {
+    @apply font-light text-2xl;
+  }
+
+  h4 {
+    @apply font-light text-xl;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.dots-background {
+  background-image: radial-gradient(circle, #000 1px, transparent 1px),
+    radial-gradient(circle, #000 1px, transparent 1px);
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+}
+
+.group:hover .svg-glow {
+  filter: drop-shadow(0 0 5px var(--primary-700));
+}
+.content {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  transition-property: opacity, transform, filter, background;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+
+.page-unmount {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(12px);
+  }
+}
